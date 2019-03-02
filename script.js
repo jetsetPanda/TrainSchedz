@@ -77,9 +77,9 @@ database.ref().on("child_added", function(childSnapshot) {
     var newTR = $("<tr>").append(
             $("<td>").text(newName),
             $("<td>").text(newDest),
-            $("<td>").text(newFreq),
-            $("<td>").text(nextTrain),
-            $("<td>").text(minAway)
+            $("<td>").text(newFreq).addClass('text-center'),
+            $("<td>").text(nextTrain).addClass('text-center'),
+            $("<td>").text(minAway).addClass('text-center')
     );
     
     $("#displayTable > tbody").append(newTR);
